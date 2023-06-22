@@ -1,7 +1,12 @@
 body {
 	margin: 0;
 	background-color: #000;
-	background-image: radial-gradient(ellipse at top, #335476 0.0%, #31506e 11.1%, #304b67 22.2%, #2f4760 33.3%, #2d4359 44.4%, #2c3f51 55.6%, #2a3a4a 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%);
+	background: #bed6bc;
+background: -moz-radial-gradient(center, ellipse cover,  #bed6bc 0%, #93bb8f 17%, #69a163 33%, #217218 67%, #15490f 83%, #091e06 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #bed6bc 0%,#93bb8f 17%,#69a163 33%,#217218 67%,#15490f 83%,#091e06 100%);
+background: radial-gradient(ellipse at center,  #bed6bc 0%,#93bb8f 17%,#69a163 33%,#217218 67%,#15490f 83%,#091e06 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed6bc', endColorstr='#091e06',GradientType=1 );
+
 	height: 100vh;
 	overflow: hidden;
 
@@ -21,8 +26,7 @@ body {
 /*/////////////////////
 //        HUD        //
 /////////////////////*/
-
-
+ 
 .hud__score,
 .pause-btn {
 	position: fixed;
@@ -178,7 +182,7 @@ body {
 /* Common menu elements */
 
 h1 {
-	font-size: 4rem;
+	font-size: 5rem;
 	line-height: 0.95;
 	text-align: center;
 	font-weight: bold;
@@ -186,7 +190,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2rem;
+	font-size: 2.2rem;
 	line-height: 1;
 	text-align: center;
 	font-weight: bold;
@@ -206,17 +210,17 @@ h2 {
 button {
 	display: block;
 	position: relative;
-	width: 200px;
-	padding: 12px 20px;
+	width: 400px;
+	padding: 15px 25px;
 	background: transparent;
 	border: none;
 	outline: none;
 	user-select: none;
 	font-family: monospace;
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	color: #fff;
-	opacity: 0.75;
+	opacity: 1.75;
 	transition: opacity 0.3s;
 }
 

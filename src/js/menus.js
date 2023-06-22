@@ -70,6 +70,11 @@ handleClick($('.play-casual-btn'), () => {
 handleClick($('.resume-btn'), () => resumeGame());
 handleClick($('.menu-btn--pause'), () => setActiveMenu(MENU_MAIN));
 
+handleClick($('.whitelist-btn'),()=>{
+	var address =document.getElementById("whitelistaddress").value;
+
+	alert('Save the Address to some Database - '+address)
+})
 // Score Menu
 handleClick($('.play-again-btn'), () => {
 	setActiveMenu(null);
