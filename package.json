@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/MilllerTime/menja#readme",
   "resolutions": {
-    "**/event-stream": "^4.0.1"
+    "**/event-stream": "^4.0.1",
+    "graceful-fs": "^4.2.11"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
