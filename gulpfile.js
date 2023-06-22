@@ -10,7 +10,7 @@ const replace = require('gulp-replace');
 const iife = require('gulp-iife');
 const del = require('del');
 const chalk = require('chalk');
-const gzipSize = require('gzip-size');
+const gzipSize = require('gzip-size'); 
 
 
 
@@ -72,6 +72,11 @@ gulp.task('iife', () => {
 });
 
 
+gulp.task('copy-img', function() {
+	return gulp.src('./src/*.png')
+	  .pipe(gulp.dest('./build'));
+  });
+
 // Minify all code, and inline CSS/JS into HTML file.
 gulp.task('inline-minify', () => {
 	const htmlminOptions = {
@@ -108,6 +113,7 @@ gulp.task('default', callback => {
 		'stripPerfCode',
 		'iife',
 		'inline-minify',
+		'copy-img',
 		finish
 	);
 });
