@@ -43,5 +43,8 @@
     "gulp-useref": "^3.1.5",
     "gzip-size": "^5.0.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
   }
 }

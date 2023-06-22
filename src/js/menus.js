@@ -73,7 +73,19 @@ handleClick($('.menu-btn--pause'), () => setActiveMenu(MENU_MAIN));
 handleClick($('.whitelist-btn'),()=>{
 	var address =document.getElementById("whitelistaddress").value;
 
-	alert('Save the Address to some Database - '+address)
+	fetch("https://api.apispreadsheets.com/data/xf6amlR1pwcYw3BI/", {
+		method: "POST",
+		body: JSON.stringify({"data": {"whitelistaddress":address}}),
+	}).then(res =>{
+		if (res.status === 201){
+			alert('CONGRATULATIONS, You are whitelisted For the $BAIT Presale. - '+address)
+		}
+		else{
+			alert("There was an error :(")
+		}
+	})
+
+	
 })
 // Score Menu
 handleClick($('.play-again-btn'), () => {
